@@ -1,17 +1,19 @@
 def analyze_career(resume_skills, career_data):
     """
-    Compare Resume Skills with Career Skills
+    Analyze Resume against Career Role
     """
 
-    required_skills = career_data["skills"]
+    required_skills = career_data.get("skills", [])
 
     matched_skills = []
 
     missing_skills = []
 
+    resume_lower = [skill.lower() for skill in resume_skills]
+
     for skill in required_skills:
 
-        if skill.lower() in [s.lower() for s in resume_skills]:
+        if skill.lower() in resume_lower:
 
             matched_skills.append(skill)
 
@@ -19,10 +21,19 @@ def analyze_career(resume_skills, career_data):
 
             missing_skills.append(skill)
 
-    readiness = round(
-        (len(matched_skills) / len(required_skills)) * 100,
-        2
-    )
+    if len(required_skills) == 0:
+
+        readiness = 0
+
+    else:
+
+        readiness = round(
+
+            (len(matched_skills) / len(required_skills)) * 100,
+
+            2
+
+        )
 
     return {
 
@@ -32,12 +43,34 @@ def analyze_career(resume_skills, career_data):
 
         "readiness": readiness,
 
-        "projects": career_data["projects"],
+        "projects": career_data.get("projects", []),
 
-        "tools": career_data["tools"],
+        "tools": career_data.get("tools", []),
 
-        "certifications": career_data["certifications"],
+        "courses": career_data.get("courses", []),
 
-        "salary": career_data["salary"]
+        "companies": career_data.get("companies", []),
+
+        "interview_questions": career_data.get("interview_questions", []),
+
+        "roadmap": career_data.get("roadmap", []),
+
+        "ai_tips": career_data.get("ai_tips", []),
+
+        "certifications": career_data.get("certifications", []),
+
+        "salary": career_data.get(
+
+            "salary",
+
+            {
+
+                "fresher": "N/A",
+
+                "experienced": "N/A"
+
+            }
+
+        )
 
     }

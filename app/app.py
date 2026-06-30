@@ -100,6 +100,12 @@ def analyze():
 
     certifications = analysis["certifications"]
 
+    courses = analysis["courses"]
+    companies = analysis["companies"]
+    interview_questions = analysis["interview_questions"]
+    roadmap = analysis["roadmap"]
+    ai_tips = analysis["ai_tips"]
+ 
     salary = analysis["salary"]
 
 # -----------------------------
@@ -184,7 +190,17 @@ def analyze():
 
         salary=salary,
 
-        message=message
+        message=message,
+
+        courses=courses,
+
+        companies=companies,
+
+        interview_questions=interview_questions,
+
+        roadmap=roadmap,
+
+        ai_tips=ai_tips,
 
     )
 
