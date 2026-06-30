@@ -1,0 +1,39 @@
+{
+    "role": "ML Engineer",
+
+    "skills": [
+        "Python",
+        "Machine Learning",
+        "Scikit-learn",
+        "TensorFlow",
+        "PyTorch",
+        "NumPy",
+        "Pandas",
+        "SQL",
+        "Docker"
+    ],
+
+    "projects": [
+        "Spam Classifier",
+        "Image Classification",
+        "ResumeRankAI",
+        "Recommendation System"
+    ],
+
+    "tools": [
+        "Git",
+        "Docker",
+        "Jupyter Notebook",
+        "VS Code"
+    ],
+
+    "certifications": [
+        "TensorFlow Developer",
+        "Machine Learning Specialization"
+    ],
+
+    "salary": {
+        "fresher": "7-12 LPA",
+        "experienced": "15-30 LPA"
+    }
+}

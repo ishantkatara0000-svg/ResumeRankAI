@@ -1,0 +1,38 @@
+{
+    "role": "Data Scientist",
+
+    "skills": [
+        "Python",
+        "SQL",
+        "Pandas",
+        "NumPy",
+        "Statistics",
+        "Machine Learning",
+        "Scikit-learn",
+        "Matplotlib",
+        "Data Visualization"
+    ],
+
+    "projects": [
+        "House Price Prediction",
+        "Customer Churn Prediction",
+        "Fraud Detection",
+        "Movie Recommendation System"
+    ],
+
+    "tools": [
+        "Jupyter Notebook",
+        "Git",
+        "VS Code"
+    ],
+
+    "certifications": [
+        "IBM Data Science",
+        "Google Advanced Data Analytics"
+    ],
+
+    "salary": {
+        "fresher": "6-10 LPA",
+        "experienced": "12-25 LPA"
+    }
+}

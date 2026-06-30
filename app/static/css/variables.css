@@ -1,0 +1,56 @@
+/* ==========================================
+   ResumeRankAI Design System
+========================================== */
+
+:root{
+
+    /* Brand Colors */
+
+    --primary:#4F46E5;
+    --primary-dark:#3730A3;
+
+    --secondary:#06B6D4;
+
+    --success:#22C55E;
+    --warning:#F59E0B;
+    --danger:#EF4444;
+
+    /* Background */
+
+    --bg:#F4F7FC;
+    --surface:#FFFFFF;
+
+    /* Text */
+
+    --text:#0F172A;
+    --text-light:#64748B;
+
+    /* Border */
+
+    --border:#E2E8F0;
+
+    /* Radius */
+
+    --radius-sm:10px;
+    --radius-md:16px;
+    --radius-lg:24px;
+
+    /* Shadow */
+
+    --shadow:
+
+    0 10px 35px rgba(0,0,0,.08);
+
+    /* Navbar */
+
+    --navbar-height:80px;
+
+    /* Sidebar */
+
+    --sidebar-width:260px;
+
+    /* Transition */
+
+    --transition:.3s ease;
+
+}

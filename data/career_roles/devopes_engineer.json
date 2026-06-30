@@ -1,0 +1,39 @@
+{
+    "role": "DevOps Engineer",
+
+    "skills": [
+        "Linux",
+        "Docker",
+        "Kubernetes",
+        "Jenkins",
+        "Git",
+        "GitHub Actions",
+        "AWS",
+        "Terraform",
+        "Python"
+    ],
+
+    "projects": [
+        "CI/CD Pipeline",
+        "Dockerized Flask App",
+        "AWS Deployment",
+        "Kubernetes Cluster"
+    ],
+
+    "tools": [
+        "Docker",
+        "Jenkins",
+        "Git",
+        "AWS"
+    ],
+
+    "certifications": [
+        "AWS Cloud Practitioner",
+        "Docker Certified Associate"
+    ],
+
+    "salary": {
+        "fresher": "5-10 LPA",
+        "experienced": "12-28 LPA"
+    }
+}

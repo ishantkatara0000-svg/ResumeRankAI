@@ -1,0 +1,38 @@
+{
+    "role": "AI Engineer",
+
+    "skills": [
+        "Python",
+        "Machine Learning",
+        "Deep Learning",
+        "TensorFlow",
+        "PyTorch",
+        "LLMs",
+        "Prompt Engineering",
+        "NLP",
+        "Computer Vision"
+    ],
+
+    "projects": [
+        "AI Chatbot",
+        "ResumeRankAI",
+        "Object Detection",
+        "Face Recognition"
+    ],
+
+    "tools": [
+        "Git",
+        "Docker",
+        "VS Code"
+    ],
+
+    "certifications": [
+        "AI Engineer Professional",
+        "Generative AI Certification"
+    ],
+
+    "salary": {
+        "fresher": "8-14 LPA",
+        "experienced": "18-35 LPA"
+    }
+}

@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>ResumeRankAI</title>
+
+    <link rel="stylesheet"
+          href="{{ url_for('static', filename='css/style.css') }}">
+
+</head>
+
+<body>
+
+<div class="hero">
+
+    <div class="hero-content">
+
+        <div class="hero-left">
+
+            <span class="badge">
+
+                🚀 AI Career Platform
+
+            </span>
+
+            <h1>
+
+                ResumeRankAI
+
+            </h1>
+
+            <p class="hero-text">
+
+                Upload your resume, choose your dream career,
+                and get an AI-powered career dashboard with
+                skills, roadmap, projects, interview preparation
+                and personalized recommendations.
+
+            </p>
+
+            <div class="hero-stats">
+
+                <div class="stat">
+
+                    <h2>92%</h2>
+
+                    <p>ATS Accuracy</p>
+
+                </div>
+
+                <div class="stat">
+
+                    <h2>150+</h2>
+
+                    <p>Career Roles</p>
+
+                </div>
+
+                <div class="stat">
+
+                    <h2>10K+</h2>
+
+                    <p>Students</p>
+
+                </div>
+
+            </div>
+
+        </div>
+        <!-- Right Side -->
+
+        <div class="hero-right">
+
+            <div class="upload-card">
+
+                <h2>
+
+                    Analyze Your Resume
+
+                </h2>
+
+                <p>
+
+                    Upload your resume and select your target career.
+
+                </p>
+
+                <form action="/analyze"
+                      method="POST"
+                      enctype="multipart/form-data">
+
+                    <div class="form-group">
+
+                        <label>
+
+                            Upload Resume
+
+                        </label>
+
+                        <input
+                            type="file"
+                            name="resume"
+                            accept=".pdf"
+                            required>
+
+                    </div>
+
+                    <div class="form-group">
+
+                        <label>
+
+                            Target Career
+
+                        </label>
+
+                        <select
+                            name="career_role"
+                            required>
+
+                            <option value="">
+
+                                Select Career
+
+                            </option>
+
+                            <option>Data Analyst</option>
+
+                            <option>Data Scientist</option>
+
+                            <option>ML Engineer</option>
+
+                            <option>AI Engineer</option>
+
+                            <option>Python Developer</option>
+
+                            <option>DevOps Engineer</option>
+
+                        </select>
+
+                    </div>
+
+                    <button
+                        class="btn"
+                        type="submit">
+
+                        Analyze Resume
+
+                    </button>
+
+                </form>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+<!-- Features -->
+
+<section class="features">
+
+    <div class="feature-card">
+
+        <h2>📄</h2>
+
+        <h3>Resume Analysis</h3>
+
+        <p>
+
+            AI extracts your skills and analyzes your resume.
+
+        </p>
+
+    </div>
+
+    <div class="feature-card">
+
+        <h2>🎯</h2>
+
+        <h3>Career Roadmap</h3>
+
+        <p>
+
+            Get a personalized roadmap to achieve your target career.
+
+        </p>
+
+    </div>
+
+    <div class="feature-card">
+
+        <h2>📊</h2>
+
+        <h3>Career Dashboard</h3>
+
+        <p>
+
+            View ATS score, readiness, charts, and recommendations.
+
+        </p>
+
+    </div>
+
+</section>
+
+<!-- How It Works -->
+
+<section class="steps">
+
+    <h2>
+
+        How It Works
+
+    </h2>
+
+    <div class="step-container">
+
+        <div class="step">
+
+            <h3>1</h3>
+
+            <p>Upload Resume</p>
+
+        </div>
+
+        <div class="step">
+
+            <h3>2</h3>
+
+            <p>Select Career Goal</p>
+
+        </div>
+
+        <div class="step">
+
+            <h3>3</h3>
+
+            <p>AI Analysis</p>
+
+        </div>
+
+        <div class="step">
+
+            <h3>4</h3>
+
+            <p>Career Dashboard</p>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- Footer -->
+
+<footer>
+
+    <p>
+
+        © 2026 ResumeRankAI | AI Career Readiness Platform
+
+    </p>
+
+</footer>
+
+</body>
+
+</html>

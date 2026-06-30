@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <title>ATS Report</title>
+
+</head>
+
+<body>
+
+<h1>ResumeRankAI</h1>
+
+<h2>ATS Report</h2>
+
+<hr>
+
+<h3>ATS Score : {{ ats_score }}%</h3>
+
+<h3>Skill Match : {{ skill_match }}%</h3>
+
+<h3>Final ATS Score : {{ final_score }}%</h3>
+
+<hr>
+
+<h2>Resume Skills</h2>
+
+<ul>
+
+{% for skill in resume_skills %}
+
+<li>{{ skill }}</li>
+
+{% endfor %}
+
+</ul>
+
+<hr>
+
+<h2>Job Skills</h2>
+
+<ul>
+
+{% for skill in job_skills %}
+
+<li>{{ skill }}</li>
+
+{% endfor %}
+
+</ul>
+
+</body>
+
+</html>

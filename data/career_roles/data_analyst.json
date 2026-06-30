@@ -1,0 +1,39 @@
+{
+    "role": "Data Analyst",
+
+    "skills": [
+        "Python",
+        "SQL",
+        "Excel",
+        "Power BI",
+        "Tableau",
+        "Pandas",
+        "NumPy",
+        "Statistics",
+        "Data Visualization"
+    ],
+
+    "projects": [
+        "Sales Dashboard",
+        "Customer Churn Analysis",
+        "IPL Data Analysis",
+        "Netflix Data Analysis"
+    ],
+
+    "tools": [
+        "Power BI",
+        "Excel",
+        "Jupyter Notebook",
+        "Git"
+    ],
+
+    "certifications": [
+        "Google Data Analytics",
+        "Microsoft Power BI"
+    ],
+
+    "salary": {
+        "fresher": "4-8 LPA",
+        "experienced": "8-18 LPA"
+    }
+}

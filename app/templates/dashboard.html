@@ -1,0 +1,598 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>ResumeRankAI Dashboard</title>
+
+    <link rel="stylesheet"
+          href="{{ url_for('static', filename='css/style.css') }}">
+
+    <!-- Chart JS -->
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+</head>
+
+<body>
+
+<!-- ========================= -->
+<!-- NAVBAR -->
+<!-- ========================= -->
+
+{% include "navbar.html" %}
+
+<div class="dashboard-container">
+
+<!-- ========================= -->
+<!-- SIDEBAR -->
+<!-- ========================= -->
+
+{% include "sidebar.html" %}
+
+<!-- ========================= -->
+<!-- MAIN CONTENT -->
+<!-- ========================= -->
+
+<main class="main-content">
+
+<!-- ========================= -->
+<!-- HERO -->
+<!-- ========================= -->
+
+<section
+class="welcome-card"
+id="dashboard">
+
+    <div class="hero-left">
+
+        <h1>
+
+            Good Evening,
+            {{ user.name }} 👋
+
+        </h1>
+
+        <p>
+
+            {{ message }}
+
+        </p>
+
+        <div class="hero-progress">
+
+            <h3>
+
+                Career Readiness
+
+            </h3>
+
+            <div class="progress-bar
+        <!-- ========================= -->
+<!-- AI CAREER COACH -->
+<!-- ========================= -->
+
+<section
+class="section"
+id="ai-coach">
+
+<h2>
+
+🤖 AI Career Coach
+
+</h2>
+
+<div class="ai-coach">
+
+<div class="coach-card">
+
+<h3>
+
+Current Level
+
+</h3>
+
+<h1>
+
+{{ user.level }}
+
+</h1>
+
+</div>
+
+<div class="coach-card">
+
+<h3>
+
+Target Role
+
+</h3>
+
+<h1>
+
+{{ user.career }}
+
+</h1>
+
+</div>
+
+<div class="coach-card">
+
+<h3>
+
+AI Suggestion
+
+</h3>
+
+<p>
+
+Improve your resume by learning the missing skills below.
+
+</p>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- ========================= -->
+<!-- MATCHED SKILLS -->
+<!-- ========================= -->
+
+<section
+class="section"
+id="matched-skills">
+
+<h2>
+
+✅ Matched Skills
+
+</h2>
+
+<div class="skills">
+
+{% for skill in matched_skills %}
+
+<span class="skill">
+
+{{ skill }}
+
+</span>
+
+{% endfor %}
+
+</div>
+
+</section>
+
+<!-- ========================= -->
+<!-- MISSING SKILLS -->
+<!-- ========================= -->
+
+<section
+class="section"
+id="missing-skills">
+
+<h2>
+
+❌ Missing Skills
+
+</h2>
+
+<div class="skills">
+
+{% for skill in missing_skills %}
+
+<span class="skill missing">
+
+{{ skill }}
+
+</span>
+
+{% endfor %}
+
+</div>
+
+</section>
+
+<!-- ========================= -->
+<!-- SKILL PROGRESS -->
+<!-- ========================= -->
+
+<section
+class="section"
+id="skill-progress">
+
+<h2>
+
+📈 Skill Progress
+
+</h2>
+
+<div class="progress-item">
+
+<label>
+
+Career Readiness
+
+</label>
+
+<progress
+value="{{ user.readiness }}"
+max="100">
+
+</progress>
+
+<span>
+
+{{ user.readiness }}%
+
+</span>
+
+</div>
+
+</section>
+
+<!-- ========================= -->
+<!-- PROJECTS -->
+<!-- ========================= -->
+
+<section
+class="section"
+id="projects">
+
+<h2>
+
+🚀 Recommended Projects
+
+</h2>
+
+<ul>
+
+{% for project in projects %}
+
+<li>
+
+{{ project }}
+
+</li>
+
+{% endfor %}
+
+</ul>
+
+</section>
+
+<!-- ========================= -->
+<!-- COURSES -->
+<!-- ========================= -->
+
+<section
+class="section"
+id="courses">
+
+<h2>
+
+📚 Recommended Courses
+
+</h2>
+  <!--========================= -->
+<!-- INTERVIEW QUESTIONS -->
+<!-- ========================= -->
+
+<section
+class="section"
+id="interview">
+
+<h2>
+
+💼 Interview Questions
+
+</h2>
+
+<div class="course-list">
+
+<div class="course-card">
+
+<h3>
+
+Technical Round
+
+</h3>
+
+<p>
+
+Python, SQL, OOP, DBMS, OS, Networking
+
+</p>
+
+</div>
+
+<div class="course-card">
+
+<h3>
+
+HR Round
+
+</h3>
+
+<p>
+
+Introduction, Strengths, Weaknesses, Projects
+
+</p>
+
+</div>
+
+<div class="course-card">
+
+<h3>
+
+Coding Round
+
+</h3>
+
+<p>
+
+Arrays, Strings, Linked List, SQL Queries
+
+</p>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- ========================= -->
+<!-- CERTIFICATIONS -->
+<!-- ========================= -->
+
+<section
+class="section"
+id="certifications">
+
+<h2>
+
+📜 Recommended Certifications
+
+</h2>
+
+<ul>
+
+{% for cert in certifications %}
+
+<li>
+
+{{ cert }}
+
+</li>
+
+{% endfor %}
+
+</ul>
+
+</section>
+
+<!-- ========================= -->
+<!-- TOOLS -->
+<!-- ========================= -->
+
+<section
+class="section"
+id="tools">
+
+<h2>
+
+🛠 Required Tools
+
+</h2>
+
+<ul>
+
+{% for tool in tools %}
+
+<li>
+
+{{ tool }}
+
+</li>
+
+{% endfor %}
+
+</ul>
+
+</section>
+
+<!-- ========================= -->
+<!-- SALARY -->
+<!-- ========================= -->
+
+<section
+class="section"
+id="salary">
+
+<h2>
+
+💰 Salary Roadmap
+
+</h2>
+
+<div class="salary-grid">
+
+<div class="salary-card">
+
+<h3>
+
+Fresher
+
+</h3>
+
+<h2>
+
+{{ salary.fresher }}
+
+</h2>
+
+</div>
+
+<div class="salary-card">
+
+<h3>
+
+Experienced
+
+</h3>
+
+<h2>
+
+{{ salary.experienced }}
+
+</h2>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- ========================= -->
+<!-- TOP COMPANIES -->
+<!-- ========================= -->
+
+<section
+class="section"
+id="companies">
+
+<h2>
+
+🏢 Top Companies
+
+</h2>
+
+<div class="skills">
+
+<span class="skill">Google</span>
+
+<span class="skill">Microsoft</span>
+
+<span class="skill">Amazon</span>
+
+<span class="skill">Adobe</span>
+
+<span class="skill">Oracle</span>
+
+<span class="skill">NVIDIA</span>
+
+<span class="skill">Accenture</span>
+
+<span class="skill">Deloitte</span>
+
+</div>
+
+</section>
+
+<!-- ========================= -->
+<!-- DOWNLOAD -->
+<!-- ========================= -->
+
+<section
+class="section"
+id="download">
+
+<h2>
+
+📄 Report
+
+</h2>
+
+<button class="btn">
+
+Download PDF Report
+
+</button>
+
+</section>
+
+</main>
+
+</div>
+
+<script>
+
+const readiness={{ user.readiness }};
+const matched={{ matched_skills|length }};
+const missing={{ missing_skills|length }};
+
+new Chart(document.getElementById("readinessChart"),{
+
+type:"doughnut",
+
+data:{
+labels:["Completed","Remaining"],
+datasets:[{
+data:[readiness,100-readiness],
+backgroundColor:["#2563EB","#E5E7EB"],
+borderWidth:0
+}]
+},
+
+options:{
+responsive:true,
+plugins:{
+legend:{
+position:"bottom"
+}
+}
+}
+
+});
+
+new Chart(document.getElementById("skillChart"),{
+
+type:"bar",
+
+data:{
+labels:["Matched","Missing"],
+datasets:[{
+data:[matched,missing],
+backgroundColor:["#16A34A","#EF4444"]
+}]
+},
+
+options:{
+responsive:true,
+plugins:{
+legend:{
+display:false
+}
+}
+}
+
+});
+
+new Chart(document.getElementById("pieChart"),{
+
+type:"pie",
+
+data:{
+labels:["Matched","Missing"],
+datasets:[{
+data:[matched,missing],
+backgroundColor:["#4F46E5","#F59E0B"]
+}]
+}
+
+});
+
+</script>
+
+</body>
+
+</html> s

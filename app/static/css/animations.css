@@ -1,0 +1,39 @@
+/* Fade */
+
+@keyframes fadeUp{
+
+    from{
+
+        opacity:0;
+
+        transform:translateY(20px);
+
+    }
+
+    to{
+
+        opacity:1;
+
+        transform:translateY(0);
+
+    }
+
+}
+
+.welcome-card{
+
+    animation:fadeUp .6s ease;
+
+}
+
+.analytics-grid{
+
+    animation:fadeUp .8s ease;
+
+}
+
+.section{
+
+    animation:fadeUp 1s ease;
+
+}
